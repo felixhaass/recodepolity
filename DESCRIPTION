@@ -1,0 +1,16 @@
+Package: recodepolity
+Title: Recodes Polity IV scores according to Vreeland (2008) and Pluemper and Neumayer (2010)
+Version: 0.1
+Authors@R: "Felix Haass <haass.felix@gmail.com> [aut, cre]"
+Description: The package downloads and recodes Polity IV and Polity2 scores according to Vreeland (2008) and Pluemper and Neumayer (2010). It fixes Polity IV's "contaminated"
+   components that code conflict (which makes the Polity IV problematic to use in conflict analyses, see Vreeland
+   2008). The package also recodes Polity's interregnum and interregnum-with-transition years that lack face validity
+   in Polity's original coding (Pluemper and Neumayer 2010). Since the package dynamically downloads Polity it
+   can be used to recode the latest annual publication of the Polity data.
+Depends: R (>= 3.0.3)
+Imports:
+   plyr,
+   dplyr,
+   foreign
+License: What license is it under?
+LazyData: true
